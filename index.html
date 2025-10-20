@@ -389,7 +389,7 @@
             border-left: 100px solid transparent;
             border-right: 100px solid transparent;
             border-top: 80px solid #b91c1c;
-            transform-origin: bottom center;
+            transform-origin: top center;
             animation: flapOpen 2s ease-in-out 1s forwards;
             z-index: 3;
         }
@@ -407,8 +407,12 @@
         }
 
         @keyframes flapOpen {
-            0% { transform: rotateX(0deg); }
-            100% { transform: rotateX(-120deg); }
+            0% { 
+                transform: rotateX(0deg); 
+            }
+            100% { 
+                transform: rotateX(120deg); 
+            }
         }
 
         /* Hiệu ứng thiệp từ từ hiện ra */
@@ -577,6 +581,7 @@
                 border-left: 80px solid transparent;
                 border-right: 80px solid transparent;
                 border-top: 64px solid #b91c1c;
+                transform-origin: top center;
             }
             
             .card-content {
