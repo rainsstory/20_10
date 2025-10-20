@@ -1,0 +1,595 @@
+<!DOCTYPE html>
+
+<html lang="vi"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Gửi em Lan Anh">
+    <title>Gửi em</title>
+
+  <link rel="stylesheet" href="./index.css">
+</head>
+<body>
+    <!-- Overlay hiệu ứng mở thiệp -->
+    <div id="opening-overlay" class="opening-overlay" style="display: none;">
+        <div class="sparkle-container">
+            <!-- Các ngôi sao lung linh -->
+            <div class="sparkle" style="left: 20%; top: 30%; animation-delay: 0s;"></div>
+            <div class="sparkle" style="left: 80%; top: 20%; animation-delay: 0.5s;"></div>
+            <div class="sparkle" style="left: 60%; top: 70%; animation-delay: 1s;"></div>
+            <div class="sparkle" style="left: 30%; top: 60%; animation-delay: 1.5s;"></div>
+            <div class="sparkle" style="left: 70%; top: 40%; animation-delay: 2s;"></div>
+            <div class="sparkle" style="left: 40%; top: 80%; animation-delay: 2.5s;"></div>
+            <div class="sparkle" style="left: 90%; top: 60%; animation-delay: 3s;"></div>
+            <div class="sparkle" style="left: 10%; top: 70%; animation-delay: 3.5s;"></div>
+        </div>
+        
+        <!-- Hiệu ứng mở thiệp -->
+        <div class="card-opening">
+            <div class="envelope-opening">
+                <div class="envelope-flap"></div>
+                <div class="envelope-body"></div>
+            </div>
+            <div class="card-emerging">
+                <div class="card-content">
+                    <div class="heart-burst">💕</div>
+                    <div class="opening-text">Đang mở thiệp...</div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Hiệu ứng particles -->
+        <div class="particles">
+            <div class="particle">✨</div>
+            <div class="particle">💖</div>
+            <div class="particle">🌸</div>
+            <div class="particle">💕</div>
+            <div class="particle">🌺</div>
+            <div class="particle">💗</div>
+            <div class="particle">✨</div>
+            <div class="particle">💝</div>
+        </div>
+    </div>
+
+    <!-- Trang chính - Phong bì (index1) -->
+    <div id="envelope-page" class="page-content">
+        <div class="App min-h-screen">
+            <div class="min-h-screen bg-gradient-to-br from-pink-100 via-red-50 to-pink-200 flex items-center justify-center p-4 relative overflow-hidden">
+                
+                <!-- Background floating elements -->
+                <div class="absolute inset-0 overflow-hidden pointer-events-none">
+                    <div class="absolute text-3xl opacity-20 animate-float" style="left: 76.8911%; top: 1.57045%; animation-delay: 2.71897s; animation-duration: 10.1146s;">🌺</div>
+                    <div class="absolute text-3xl opacity-20 animate-float" style="left: 13.5711%; top: 35.8438%; animation-delay: 2.33275s; animation-duration: 14.9689s;">🌺</div>
+                    <div class="absolute text-3xl opacity-20 animate-float" style="left: 98.4255%; top: 7.44108%; animation-delay: 2.12199s; animation-duration: 9.91133s;">💓</div>
+                    <div class="absolute text-3xl opacity-20 animate-float" style="left: 38.3333%; top: 50.6159%; animation-delay: 1.192s; animation-duration: 10.4705s;">🌺</div>
+                    <div class="absolute text-3xl opacity-20 animate-float" style="left: 88.0577%; top: 58.7927%; animation-delay: 3.74771s; animation-duration: 10.6528s;">💗</div>
+                    <div class="absolute text-3xl opacity-20 animate-float" style="left: 25.0911%; top: 38.8226%; animation-delay: 1.2086s; animation-duration: 11.1826s;">💕</div>
+                    <div class="absolute text-3xl opacity-20 animate-float" style="left: 77.3445%; top: 65.5127%; animation-delay: 4.10063s; animation-duration: 11.7238s;">💓</div>
+                    <div class="absolute text-3xl opacity-20 animate-float" style="left: 57.5793%; top: 10.9849%; animation-delay: 3.99874s; animation-duration: 8.44652s;">🌺</div>
+                    <div class="absolute text-3xl opacity-20 animate-float" style="left: 21.0506%; top: 92.0935%; animation-delay: 2.46404s; animation-duration: 8.4076s;">💓</div>
+                    <div class="absolute text-3xl opacity-20 animate-float" style="left: 35.2257%; top: 84.201%; animation-delay: 3.6063s; animation-duration: 13.51s;">💗</div>
+                    <div class="absolute text-3xl opacity-20 animate-float" style="left: 10.3889%; top: 64.6008%; animation-delay: 3.44965s; animation-duration: 10.6294s;">💗</div>
+                    <div class="absolute text-3xl opacity-20 animate-float" style="left: 80.9878%; top: 66.8854%; animation-delay: 1.67035s; animation-duration: 13.9987s;">💓</div>
+                    <div class="absolute text-3xl opacity-20 animate-float" style="left: 78.606%; top: 70.7034%; animation-delay: 2.5467s; animation-duration: 13.8831s;">💖</div>
+                    <div class="absolute text-3xl opacity-20 animate-float" style="left: 80.4693%; top: 44.6055%; animation-delay: 3.62461s; animation-duration: 8.29169s;">🌺</div>
+                    <div class="absolute text-3xl opacity-20 animate-float" style="left: 36.4516%; top: 77.8709%; animation-delay: 1.66915s; animation-duration: 9.71613s;">💖</div>
+                    <div class="absolute text-3xl opacity-20 animate-float" style="left: 64.2506%; top: 87.9119%; animation-delay: 1.7716s; animation-duration: 12.1109s;">💗</div>
+                    <div class="absolute text-3xl opacity-20 animate-float" style="left: 10.0074%; top: 97.2807%; animation-delay: 3.04829s; animation-duration: 11.4051s;">💕</div>
+                    <div class="absolute text-3xl opacity-20 animate-float" style="left: 1.00396%; top: 31.8124%; animation-delay: 1.36402s; animation-duration: 13.4156s;">💕</div>
+                    <div class="absolute text-3xl opacity-20 animate-float" style="left: 92.2752%; top: 64.4596%; animation-delay: 3.64986s; animation-duration: 10.3839s;">💕</div>
+                    <div class="absolute text-3xl opacity-20 animate-float" style="left: 34.4875%; top: 69.0368%; animation-delay: 3.32728s; animation-duration: 14.3402s;">🌸</div>
+                </div>
+                
+                <div class="text-center relative z-10">
+                    <div class="mb-8 animate-fade-in">
+                        <h1 class="text-5xl md:text-6xl font-bold text-love-dark mb-3 dancing-font drop-shadow-lg">💌 Thiệp Tình Yêu 20/10 💌</h1>
+                        <p class="text-xl text-gray-700 font-semibold">Dành riêng cho em Lan Anh</p>
+                    </div>
+                    
+                    <div class="relative cursor-pointer hover:scale-110 transform transition duration-500" 
+                         style="perspective: 1000px;" 
+                         onclick="openCard()">
+                        <div class="relative w-80 md:w-96 h-56 md:h-64 mx-auto">
+                            <div class="absolute inset-0 bg-gradient-to-r from-pink-400 via-red-400 to-pink-400 rounded-lg blur-xl opacity-50 animate-pulse"></div>
+                            <div class="absolute inset-0 bg-gradient-to-br from-red-500 via-pink-500 to-red-400 rounded-lg shadow-2xl border-4 border-red-600">
+                                <div class="absolute inset-4 border-2 border-white/40 rounded-md"></div>
+                                <div class="absolute top-4 right-4 w-16 h-16 bg-white/30 rounded-lg border-2 border-white/50 flex items-center justify-center backdrop-blur-sm">
+                                    <span class="text-3xl">💖</span>
+                                </div>
+                                <div class="absolute bottom-20 left-8 right-8 space-y-2">
+                                    <div class="h-1 bg-white/20 rounded"></div>
+                                    <div class="h-1 bg-white/20 rounded w-3/4"></div>
+                                </div>
+                            </div>
+                            <div class="absolute top-0 left-0 w-full h-full origin-top" style="transform-style: preserve-3d; backface-visibility: hidden;">
+                                <div class="absolute top-0 left-0 w-0 h-0 border-l-[160px] md:border-l-[192px] border-l-transparent border-r-[160px] md:border-r-[192px] border-r-transparent border-t-[120px] md:border-t-[140px] border-t-red-700 shadow-2xl"></div>
+                                <div class="absolute top-12 left-1/2 transform -translate-x-1/2 w-16 h-16 bg-gradient-to-br from-yellow-400 to-yellow-600 rounded-full border-4 border-yellow-700 shadow-lg flex items-center justify-center">
+                                    <span class="text-2xl">💝</span>
+                                </div>
+                            </div>
+                            <div class="absolute top-4 left-1/2 transform -translate-x-1/2 w-64 md:w-72 h-40 md:h-48 bg-gradient-to-br from-white via-pink-50 to-white rounded-lg shadow-2xl flex items-center justify-center border-4 border-pink-200">
+                                <div class="text-center px-6 py-4">
+                                    <div class="mb-3 text-4xl animate-pulse">💌</div>
+                                    <p class="text-3xl font-bold text-love-dark dancing-font mb-2">Gửi em Lan Anh</p>
+                                    <div class="w-16 h-1 bg-gradient-to-r from-transparent via-pink-400 to-transparent mx-auto my-3"></div>
+                                    <p class="text-lg text-gray-600 font-semibold">Từ anh Hiếu</p>
+                                    <div class="mt-3 flex justify-center gap-2">
+                                        <span class="text-2xl animate-bounce-slow">💖</span>
+                                        <span class="text-2xl animate-bounce-slow" style="animation-delay: 0.2s;">💕</span>
+                                        <span class="text-2xl animate-bounce-slow" style="animation-delay: 0.4s;">💗</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- <div class="mt-10">
+                        <div class="space-y-3">
+                            <p class="text-2xl text-gray-700 font-bold animate-bounce"> Nhấn vào bì thư để mở thiệp </p>
+                            <p class="text-lg text-gray-600">Một món quà đặc biệt đang chờ bạn bên trong...</p>
+                        </div>
+                    </div> -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Trang thiệp (index2) - Ẩn ban đầu -->
+    <div id="card-page" class="page-content" style="display: none;">
+        <div class="App min-h-screen">
+            <div class="min-h-screen bg-gradient-to-br from-pink-100 via-red-50 to-pink-200 flex items-center justify-center p-4 relative overflow-hidden">
+                
+                <!-- Background floating elements -->
+                <div class="absolute inset-0 overflow-hidden pointer-events-none">
+                    <div class="absolute text-2xl opacity-20 animate-float" 
+                         style="left: 30.5157%; top: 34.3145%; animation-delay: 3.49774s; animation-duration: 6.69526s;">🌸</div>
+                    <div class="absolute text-2xl opacity-20 animate-float" 
+                         style="left: 89.8407%; top: 40.4274%; animation-delay: 0.929525s; animation-duration: 13.2662s;">💗</div>
+                    <div class="absolute text-2xl opacity-20 animate-float" 
+                         style="left: 98.7439%; top: 46.0195%; animation-delay: 1.48876s; animation-duration: 12.5243s;">💓</div>
+                    <div class="absolute text-2xl opacity-20 animate-float" 
+                         style="left: 78.8712%; top: 68.6923%; animation-delay: 4.75591s; animation-duration: 12.5317s;">💓</div>
+                    <div class="absolute text-2xl opacity-20 animate-float" 
+                         style="left: 0.731949%; top: 13.0622%; animation-delay: 3.66358s; animation-duration: 10.1602s;">✨</div>
+                    <div class="absolute text-2xl opacity-20 animate-float" 
+                         style="left: 85.1321%; top: 27.0996%; animation-delay: 2.1637s; animation-duration: 7.44537s;">🌸</div>
+                    <div class="absolute text-2xl opacity-20 animate-float" 
+                         style="left: 25.4255%; top: 89.8042%; animation-delay: 4.44668s; animation-duration: 13.5083s;">💓</div>
+                    <div class="absolute text-2xl opacity-20 animate-float" 
+                         style="left: 84.286%; top: 8.03713%; animation-delay: 1.06758s; animation-duration: 12.0328s;">💖</div>
+                    <div class="absolute text-2xl opacity-20 animate-float" 
+                         style="left: 25.0023%; top: 43.5763%; animation-delay: 2.43968s; animation-duration: 14.8891s;">💗</div>
+                    <div class="absolute text-2xl opacity-20 animate-float" 
+                         style="left: 60.8627%; top: 96.0981%; animation-delay: 1.06759s; animation-duration: 8.76459s;">💓</div>
+                    <div class="absolute text-2xl opacity-20 animate-float" 
+                         style="left: 72.5402%; top: 38.8345%; animation-delay: 3.5481s; animation-duration: 12.5798s;">🌺</div>
+                    <div class="absolute text-2xl opacity-20 animate-float" 
+                         style="left: 54.2237%; top: 86.5957%; animation-delay: 2.18528s; animation-duration: 8.23574s;">💕</div>
+                    <div class="absolute text-2xl opacity-20 animate-float" 
+                         style="left: 32.9977%; top: 51.7359%; animation-delay: 4.68747s; animation-duration: 11.05s;">🌺</div>
+                    <div class="absolute text-2xl opacity-20 animate-float" 
+                         style="left: 67.4641%; top: 58.6007%; animation-delay: 0.574319s; animation-duration: 10.9622s;">🌺</div>
+                    <div class="absolute text-2xl opacity-20 animate-float" 
+                         style="left: 19.3933%; top: 90.6866%; animation-delay: 0.692912s; animation-duration: 10.5744s;">🌸</div>
+                </div>
+
+                <!-- Main content -->
+                <div class="max-w-5xl w-full relative z-10">
+                    
+                    <!-- Header -->
+                    <div class="text-center mb-6">
+                        <div class="inline-block bg-white/80 backdrop-blur-sm px-8 py-3 rounded-full shadow-lg">
+                            <h1 class="text-3xl font-bold text-love-dark dancing-font flex items-center gap-2">
+                                <span class="animate-pulse">💌</span>
+                                Thiệp Tình Yêu 20/10
+                                <span class="animate-pulse">💌</span>
+                            </h1>
+                        </div>
+                    </div>
+
+                    <!-- Main card -->
+                    <div class="bg-white rounded-3xl shadow-2xl overflow-hidden animate-fade-in border-4 border-pink-200">
+                        <div class="grid md:grid-cols-3 gap-0">
+                            
+                            <!-- Content section -->
+                            <div class="md:col-span-2 p-8 md:p-12 bg-gradient-to-br from-white via-pink-50 to-white relative">
+                                
+                                <!-- Decorative corners -->
+                                <div class="absolute top-0 left-0 w-20 h-20 border-t-4 border-l-4 border-pink-300 rounded-tl-3xl opacity-50"></div>
+                                <div class="absolute bottom-0 right-0 w-20 h-20 border-b-4 border-r-4 border-pink-300 rounded-br-3xl opacity-50"></div>
+                                
+                                <!-- Title section -->
+                                <div class="mb-8">
+                                    <div class="inline-block border-b-4 border-love-pink pb-2 mb-4">
+                                        <h2 class="text-4xl md:text-5xl font-bold text-love-dark dancing-font">
+                                            Gửi em Lan Anh thân yêu
+                                        </h2>
+                                    </div>
+                                    <p class="text-sm text-gray-500 italic">Ngày 20/10/2025</p>
+                                </div>
+                                
+                                <!-- Message content -->
+                                <div class="bg-white/70 backdrop-blur-sm rounded-2xl p-6 mb-8 shadow-inner border-2 border-pink-100">
+                                    <p class="text-gray-800 leading-relaxed whitespace-pre-wrap text-lg md:text-xl font-serif italic">
+                                        Chúc em 20/10 khoẻ mạnh, hạnh phúc, bình an
+                                    </p>
+                                </div>
+                                
+                                <!-- Signature section -->
+                                <div class="text-right">
+                                    <div class="inline-block bg-gradient-to-r from-pink-100 to-red-100 px-6 py-4 rounded-2xl shadow-md">
+                                        <p class="text-lg text-love-pink font-semibold dancing-font">
+                                            Với tất cả tình yêu thương,
+                                        </p>
+                                        <p class="text-3xl text-love-dark font-bold dancing-font mt-2 flex items-center justify-end gap-2">
+                                            anh Hiếu
+                                            <span class="animate-pulse">💕</span>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <!-- Image section -->
+                            <div class="md:col-span-1 bg-gradient-to-br from-pink-200 via-red-200 to-pink-300 p-6 flex flex-col items-center justify-center relative">
+                                <div class="absolute inset-0 opacity-10">
+                                    <div class="absolute top-4 left-4 text-6xl">🌸</div>
+                                    <div class="absolute bottom-4 right-4 text-6xl">🌺</div>
+                                    <div class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-8xl">💖</div>
+                                </div>
+                                <div class="relative w-full h-full flex items-center justify-center">
+                                    <img src="./lath.jpg" 
+                                         alt="Gift" 
+                                         class="w-full h-64 md:h-full object-cover rounded-2xl shadow-2xl border-4 border-white transform hover:scale-105 transition duration-300">
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Back button -->
+                       
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- JavaScript để chuyển đổi giữa các trang -->
+    <script>
+        function openCard() {
+            // Hiển thị overlay hiệu ứng
+            const overlay = document.getElementById('opening-overlay');
+            overlay.style.display = 'flex';
+            overlay.style.opacity = '0';
+            
+            // Fade in overlay
+            setTimeout(() => {
+                overlay.style.transition = 'opacity 0.3s ease-in-out';
+                overlay.style.opacity = '1';
+            }, 50);
+            
+            // Sau 4 giây (thời gian hiệu ứng), chuyển sang trang thiệp
+            setTimeout(() => {
+                // Ẩn trang phong bì
+                document.getElementById('envelope-page').style.display = 'none';
+                
+                // Ẩn overlay
+                overlay.style.opacity = '0';
+                setTimeout(() => {
+                    overlay.style.display = 'none';
+                }, 300);
+                
+                // Hiện trang thiệp với hiệu ứng fade in
+                const cardPage = document.getElementById('card-page');
+                cardPage.style.display = 'block';
+                cardPage.style.opacity = '0';
+                
+                // Fade in effect
+                setTimeout(() => {
+                    cardPage.style.transition = 'opacity 0.8s ease-in-out';
+                    cardPage.style.opacity = '1';
+                }, 100);
+            }, 4000);
+        }
+
+        function goBackToEnvelope() {
+            // Ẩn trang thiệp
+            document.getElementById('card-page').style.display = 'none';
+            // Hiện trang phong bì với hiệu ứng fade in
+            const envelopePage = document.getElementById('envelope-page');
+            envelopePage.style.display = 'block';
+            envelopePage.style.opacity = '0';
+            
+            // Fade in effect
+            setTimeout(() => {
+                envelopePage.style.transition = 'opacity 0.5s ease-in-out';
+                envelopePage.style.opacity = '1';
+            }, 50);
+        }
+    </script>
+
+    <!-- CSS để làm mượt hiệu ứng chuyển trang -->
+    <style>
+        .page-content {
+            width: 100%;
+            height: 100vh;
+        }
+
+        /* Hiệu ứng overlay mở thiệp */
+        .opening-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100vw;
+            height: 100vh;
+            background: linear-gradient(135deg, #fce7f3, #fed7e2, #fbb6ce);
+            z-index: 9999;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+        }
+
+        /* Container cho các ngôi sao lung linh */
+        .sparkle-container {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+        }
+
+        /* Hiệu ứng ngôi sao lung linh */
+        .sparkle {
+            position: absolute;
+            width: 6px;
+            height: 6px;
+            background: #fff;
+            border-radius: 50%;
+            animation: sparkleAnimation 2s infinite ease-in-out;
+            box-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff;
+        }
+
+        @keyframes sparkleAnimation {
+            0%, 100% {
+                opacity: 0;
+                transform: scale(0) rotate(0deg);
+            }
+            50% {
+                opacity: 1;
+                transform: scale(1) rotate(180deg);
+            }
+        }
+
+        /* Container hiệu ứng mở thiệp */
+        .card-opening {
+            position: relative;
+            z-index: 2;
+        }
+
+        /* Hiệu ứng mở phong bì */
+        .envelope-opening {
+            position: relative;
+            width: 200px;
+            height: 140px;
+            margin: 0 auto 20px;
+        }
+
+        .envelope-body {
+            width: 200px;
+            height: 140px;
+            background: linear-gradient(135deg, #dc2626, #ef4444, #f87171);
+            border-radius: 8px;
+            position: relative;
+            animation: envelopeShake 0.5s ease-in-out 0s, envelopeOpen 2s ease-in-out 1s forwards;
+        }
+
+        .envelope-flap {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 0;
+            height: 0;
+            border-left: 100px solid transparent;
+            border-right: 100px solid transparent;
+            border-top: 80px solid #b91c1c;
+            transform-origin: bottom center;
+            animation: flapOpen 2s ease-in-out 1s forwards;
+            z-index: 3;
+        }
+
+        @keyframes envelopeShake {
+            0%, 100% { transform: rotate(0deg); }
+            25% { transform: rotate(-2deg); }
+            75% { transform: rotate(2deg); }
+        }
+
+        @keyframes envelopeOpen {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.1); }
+            100% { transform: scale(1) translateY(-20px); opacity: 0.8; }
+        }
+
+        @keyframes flapOpen {
+            0% { transform: rotateX(0deg); }
+            100% { transform: rotateX(-120deg); }
+        }
+
+        /* Hiệu ứng thiệp từ từ hiện ra */
+        .card-emerging {
+            animation: cardEmerge 2s ease-out 1.5s forwards;
+            opacity: 0;
+            transform: translateY(20px) scale(0.8);
+        }
+
+        @keyframes cardEmerge {
+            0% {
+                opacity: 0;
+                transform: translateY(20px) scale(0.8);
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0) scale(1);
+            }
+        }
+
+        .card-content {
+            background: linear-gradient(135deg, #fff, #fdf2f8, #fce7f3);
+            padding: 30px;
+            border-radius: 15px;
+            text-align: center;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+            border: 3px solid #f9a8d4;
+        }
+
+        .heart-burst {
+            font-size: 48px;
+            animation: heartBurst 1s ease-out 2.5s forwards;
+            transform: scale(0);
+        }
+
+        @keyframes heartBurst {
+            0% {
+                transform: scale(0) rotate(0deg);
+                opacity: 0;
+            }
+            50% {
+                transform: scale(1.3) rotate(180deg);
+                opacity: 1;
+            }
+            100% {
+                transform: scale(1) rotate(360deg);
+                opacity: 1;
+            }
+        }
+
+        .opening-text {
+            font-size: 24px;
+            font-weight: bold;
+            color: #be185d;
+            margin-top: 15px;
+            animation: textGlow 1s ease-in-out 3s infinite alternate;
+        }
+
+        @keyframes textGlow {
+            0% {
+                text-shadow: 0 0 5px #f9a8d4;
+                color: #be185d;
+            }
+            100% {
+                text-shadow: 0 0 20px #f9a8d4, 0 0 30px #f9a8d4;
+                color: #ec4899;
+            }
+        }
+
+        /* Hiệu ứng particles bay */
+        .particles {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+            z-index: 1;
+        }
+
+        .particle {
+            position: absolute;
+            font-size: 24px;
+            animation: particleFloat 4s ease-in-out infinite;
+            opacity: 0;
+        }
+
+        .particle:nth-child(1) {
+            left: 10%;
+            top: 20%;
+            animation-delay: 0.5s;
+        }
+
+        .particle:nth-child(2) {
+            left: 80%;
+            top: 30%;
+            animation-delay: 1s;
+        }
+
+        .particle:nth-child(3) {
+            left: 60%;
+            top: 70%;
+            animation-delay: 1.5s;
+        }
+
+        .particle:nth-child(4) {
+            left: 30%;
+            top: 80%;
+            animation-delay: 2s;
+        }
+
+        .particle:nth-child(5) {
+            left: 85%;
+            top: 60%;
+            animation-delay: 2.5s;
+        }
+
+        .particle:nth-child(6) {
+            left: 15%;
+            top: 50%;
+            animation-delay: 3s;
+        }
+
+        .particle:nth-child(7) {
+            left: 70%;
+            top: 15%;
+            animation-delay: 3.5s;
+        }
+
+        .particle:nth-child(8) {
+            left: 40%;
+            top: 40%;
+            animation-delay: 4s;
+        }
+
+        @keyframes particleFloat {
+            0% {
+                opacity: 0;
+                transform: translateY(20px) scale(0) rotate(0deg);
+            }
+            25% {
+                opacity: 1;
+                transform: translateY(0) scale(1) rotate(90deg);
+            }
+            75% {
+                opacity: 1;
+                transform: translateY(-10px) scale(1.2) rotate(270deg);
+            }
+            100% {
+                opacity: 0;
+                transform: translateY(-30px) scale(0) rotate(360deg);
+            }
+        }
+
+        /* Hiệu ứng responsive */
+        @media (max-width: 768px) {
+            .envelope-opening {
+                width: 160px;
+                height: 112px;
+            }
+            
+            .envelope-body {
+                width: 160px;
+                height: 112px;
+            }
+            
+            .envelope-flap {
+                border-left: 80px solid transparent;
+                border-right: 80px solid transparent;
+                border-top: 64px solid #b91c1c;
+            }
+            
+            .card-content {
+                padding: 20px;
+            }
+            
+            .heart-burst {
+                font-size: 36px;
+            }
+            
+            .opening-text {
+                font-size: 18px;
+            }
+        }
+    </style>
+</body></html>
